@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* 
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+    NÃO SE DEVE REPETIR ID
+    sempre dar nome pela funcionalidade, não pela forma
+    ID sobrepõe class
+*/
+
+body {
+    background-color: #bdf3bd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1e991e;
+}
+
+h1#principal {
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    color: #0e440e;
+}
+
+.basico {
+    color: #d8a826;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #2f5ad3;
+}
+
+.avancado {
+    color: #ae18e9;
+}
+
+.destaque {
+    background-color: #fc0f0f;
+}
