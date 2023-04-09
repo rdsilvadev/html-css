@@ -152,27 +152,32 @@ main .pequena { /* Ao diminuir, mantém o tamanho */
 }
 
 aside {
-    font-size: 0.9em;
-}
-
-div#aprendamais {
     background-color: var(--cor1);
-    margin: 5px;
-    border-radius: 15px 15px 0px 0px;
+    font-size: 0.9em;
+    padding: 10px;
+    border-radius: 15px;
     padding-bottom: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.212);
 }
 
-div#aprendamais > h4 {
+aside > h4 {
     display: flex;
     background-color: var(--cor3);
-    padding: 8px;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
     color: white;
     border-radius: 15px 15px 0px 0px;
 }
 
-div#aprendamais > p {
+aside > p {
     text-indent: 30px;
     padding: 5px;
+}
+
+aside > ul { /* IMPORTANTE */
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2
 }
 
 div.video {
@@ -189,19 +194,6 @@ div.video > iframe {
     width: 90%;
     height: 90%;
     position: absolute;
-}
-
-aside > p {
-    text-indent: 30px;
-}
-
-.blocolista {
-    display: inline-block;
-    margin-right: 20%;
-}
-
-.blocolista > li::before {
-    content: '✔\00a0\00a0';
 }
 
 footer {
