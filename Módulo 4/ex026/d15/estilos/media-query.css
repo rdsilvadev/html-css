@@ -8,8 +8,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
     }
+
 
     section#login {
         width: 80vw;
@@ -30,8 +31,16 @@
 
 @media screen and (min-width: 993px) {
 
+    html {
+        overflow: auto;
+    }
+
     body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+        background-repeat: no-repeat;
+        overflow: hidden;
+        min-height: 100vh;
+        flex-direction: column;
     }
 
     section#login {
