@@ -15,12 +15,14 @@
     section#login {
         width: 80vw;
         height: 80vh;
+        min-height: 300px;
     }
 
     section#login > div#imagem {
         float: left;
         width: 30%;
         height: 100%;
+        border-top-right-radius: 0px;
     }
 
     section#login > div#formulario {
@@ -45,11 +47,14 @@
 
     section#login {
         width: 950px;
+        height: 90vh;
+        min-height: 250px;
     }    
     section#login > div#imagem {
         float: right;
         width: 50%;
         height: 100%;
+        border-top-left-radius: 0px;
     }
 
     section#login > div#formulario {
