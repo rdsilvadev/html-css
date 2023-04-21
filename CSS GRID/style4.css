@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body,
+html {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 60vh 20vh;
+
+    grid-template-areas: "1"
+                         "2"
+                         "3";
+}
+
+main {
+    background-color: aqua;
+    padding: 10px;
+    grid-area: 3;
+}
+
+div.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-area: 2;
+}
+
+div.sections > #s1 {
+    background-color: rgb(43, 226, 104);
+    padding: 10px;
+}
+
+div.sections > #s2 {
+    background-color: rgb(143, 95, 189);
+    padding: 10px;
+}
+
+div.sections > #s3 {
+    background-color: rgb(226, 43, 58);
+    padding: 10px;
+}
+
+footer {
+    background-color: yellow;
+    padding: 10px;
+    grid-area: 1;
+}
