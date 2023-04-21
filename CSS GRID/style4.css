@@ -12,6 +12,7 @@ div.container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20vh 60vh 20vh;
+    grid-gap: 10px;
 
     grid-template-areas: "1"
                          "2"
@@ -34,11 +35,13 @@ div.sections {
 div.sections > #s1 {
     background-color: rgb(43, 226, 104);
     padding: 10px;
+    height: 30%;
 }
 
 div.sections > #s2 {
     background-color: rgb(143, 95, 189);
     padding: 10px;
+    height: 80%;
 }
 
 div.sections > #s3 {

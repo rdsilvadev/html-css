@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            background-color: lightgreen;
+
+            /* grid-template-columns: 100px 300px auto; */
+
+            /* grid-template-columns: minmax(160px, 200px) 1fr 2fr;
+
+            grid-template-rows: repeat(3, 1fr); */
+
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-columns: [first] 1fr [second] 2fr [third] 1fr [last] 2fr; */
+
+            /* grid-template-columns: repeat(4, [col-start] 1fr [col-end]); */
+            grid-template-rows: repeat(6, 1fr); 
+
+
+            /* grid-column-gap: 5px;
+            grid-row-gap: 5px; */
+            gap: 5px;
+        }
+
+        .item {
+            /* border: 1px solid black; */
+            padding: 10px;
+            background-color: salmon;
+        }
+
+        .item1 {
+            background: lightblue;
+
+            /* grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3; */
+
+            /* grid-row: 2/4;
+            grid-column: 2/5; */
+
+            /* Shorthand */
+            grid-area: 1/1/span 3/3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, repudiandae possimus! Tempora, earum pariatur culpa quos numquam blanditiis! Vitae possimus excepturi perspiciatis doloribus culpa obcaecati laudantium et minima quisquam quaerat?</div>
+        <div class="item1">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+    </div>
+</body>
+</html>

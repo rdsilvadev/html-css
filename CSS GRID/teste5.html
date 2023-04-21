@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            display: flex;
+            background-color: rgb(146, 192, 252);
+            /* Shorthand - flex-flow: row wrap; */
+            /* justify-content: space-evenly;
+            align-items: flex-start; */
+            width: 600px;
+            height: 100vh;
+        }
+
+        .item {
+            background: lightcoral;
+            padding: 30px;
+            margin: 10px;
+            text-align: center;
+
+            flex: 1 1 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">Item 1</div>
+        <div class="item" style="align-self: flex-start;">Item 2</div>
+        <div class="item" style="align-self: center">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>
