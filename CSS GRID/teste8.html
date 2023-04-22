@@ -13,21 +13,42 @@
         }
 
         header {
+            display: grid;
             background-color: rgb(6, 35, 73);
             color: white;
             grid-area: h;
-            padding: 10px;
+            padding: 10px
         }
 
         img {
-            width: 150px;
+            width: 100px;
         }
 
-        header div {
-            display: grid;
-            place-items: center;
+        header > div.div1 {
+            justify-items: left;
         }
 
+        header h1 {
+            text-align: center;
+        }   
+
+        header > nav {
+            grid-template-columns: 10% 10% 10% 10% 10%;
+            gap: 5px;
+        }
+
+        header > nav > a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: goldenrod;
+            text-align: center;
+        }
+
+        header > nav > a:hover {
+            background-color: rgb(224, 121, 24);
+        }
 
         main {
             background-color: rgb(27, 73, 100);
@@ -94,11 +115,16 @@
 <body>
     <div id="container">
         <header>
-            <h1>
-                <div>
+                <div class="div1">
                     <img src="logo.png" alt="">
                 </div>
-            </h1>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Quem Somos</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Suporte 24h</a>
+                    <a href="#">Foda-se kkk</a>
+                </nav>
         </header>
         <main>
             <ul>
