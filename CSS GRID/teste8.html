@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(6, 35, 73);
+            color: white;
+            grid-area: h;
+            padding: 10px;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        header div {
+            display: grid;
+            place-items: center;
+        }
+
+
+        main {
+            background-color: rgb(27, 73, 100);
+            color: white;
+            grid-area: m;
+            padding: 10px;
+        }
+
+        main li {
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px solid;
+            background-color: rgb(216, 109, 21);
+            list-style-type: none;
+            border-radius: 10px;
+            text-align: center;
+            transition: 1s;
+            font-size: 1.3em;
+        }
+
+        main li:hover {
+            background-color: rgb(15, 141, 135);
+            border-radius: 20px;
+        }
+
+        aside {
+            background-color: rgb(40, 120, 185);
+            color: white;
+            grid-area: a;
+            padding: 10px;
+        }
+
+        aside h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        aside p {
+            text-indent: 30px;
+        }
+
+        footer {
+            background-color: rgb(5, 35, 90);
+            color: white;
+            grid-area: f;
+            text-align: center;
+            font-size: 1.1em;
+            padding: 3px;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 180px auto 60px;
+
+            gap: 5px;
+
+            grid-template-areas: "h h"
+                                 "m a"
+                                 "f f";
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>
+                <div>
+                    <img src="logo.png" alt="">
+                </div>
+            </h1>
+        </header>
+        <main>
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+                <li>Menu 6</li>
+                <li>Menu 7</li>
+                <li>Menu 8</li>
+                <li>Menu 9</li>
+                <li>Menu 10</li>
+            </ul>
+        </main>
+        <aside>
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error nihil numquam. Soluta a veniam beatae debitis ipsa rerum omnis dolorum, tempora impedit ipsam deserunt at laborum ullam, incidunt aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique aspernatur, ratione natus voluptatem vel culpa repudiandae ut ipsum cupiditate omnis! Ex fuga obcaecati eius perferendis! Neque voluptates quis assumenda quia!</p>
+            <h2>Título 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus rem minima a ex deleniti. Iste quisquam provident, ad at temporibus vitae, perferendis alias nostrum est laboriosam beatae! Autem, sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aperiam, vero ducimus doloribus ab qui accusamus eos repudiandae nam officia nobis, voluptatem quam quibusdam beatae doloremque magni eius? Natus, maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, aliquid tempora assumenda asperiores labore voluptates repellendus optio ut vitae excepturi architecto rerum vel dolores sapiente deleniti! Vero sapiente adipisci odit!</p>
+            <h2>Título 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quas nam mollitia velit at, odio harum, quae error eum quo magni, animi atque libero itaque excepturi alias doloremque architecto distinctio?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet quos, iusto voluptates, blanditiis dolores deleniti quae, rerum at aspernatur molestias natus nesciunt sapiente commodi? Mollitia aliquid esse ducimus rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis esse minus facere consequuntur molestiae fugiat odio doloremque. Voluptatibus, ab quos unde consectetur placeat animi voluptatum nostrum beatae eos fugiat nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat asperiores cupiditate dolore reprehenderit! Quos, impedit obcaecati fugit molestiae corporis quaerat unde beatae officia in tempora recusandae expedita! Illum, exercitationem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quas nam mollitia velit at, odio harum, quae error eum quo magni, animi atque libero itaque excepturi alias doloremque architecto distinctio?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet quos, iusto voluptates, blanditiis dolores deleniti quae, rerum at aspernatur molestias natus nesciunt sapiente commodi? Mollitia aliquid esse ducimus rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis esse minus facere consequuntur molestiae fugiat odio doloremque. Voluptatibus, ab quos unde consectetur placeat animi voluptatum nostrum beatae eos fugiat nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat asperiores cupiditate dolore reprehenderit! Quos, impedit obcaecati fugit molestiae corporis quaerat unde beatae officia in tempora recusandae expedita! Illum, exercitationem.</p>
+        </aside>
+        <footer><p>Site desenvolvido pela puta que te pariu</p></footer>
+    </div>
+</body>
+</html>
