@@ -37,6 +37,7 @@
         display: none;
         grid-template-columns: auto;
         gap: 2px;
+        justify-content: stretch;
     }
 
     main h1 {

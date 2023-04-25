@@ -71,6 +71,7 @@ nav#menu {
     grid-template-columns: 70px 100px 120px 150px;
     gap: 5px;
     text-align: center;
+    justify-content: center;
 
     background-color: var(--cor4);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
