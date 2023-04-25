@@ -62,6 +62,10 @@ header > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
 }
 
+span#burguer {
+    display: none;
+}
+
 nav {
     background-color: var(--cor4);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
@@ -94,7 +98,7 @@ main {
     margin-bottom: 30px;
     margin-top: 2px;
     max-width: 1000px;
-    min-width: 320px;
+    min-width: 220px;
     padding: 20px;
 }
 
@@ -148,7 +152,7 @@ main img {
 main .pequena { /* Ao diminuir, mantém o tamanho */
     display: block;
     margin: auto;
-    max-width: 350px;
+    max-width: 320px;
 }
 
 aside {
