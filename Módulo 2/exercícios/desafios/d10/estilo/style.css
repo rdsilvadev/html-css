@@ -66,23 +66,27 @@ span#burguer {
     display: none;
 }
 
-nav {
+nav#menu {
+    display: grid;
+    grid-template-columns: 70px 100px 120px 150px;
+    gap: 5px;
+    text-align: center;
+
     background-color: var(--cor4);
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
-    padding: 10px 10px 15px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
-nav > a {
+nav#menu > a {
     background-color: var(--cor3);
     border-radius: 5px;
     color: white;
-    margin-left: 3px;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     text-decoration: none;
     transition-duration: 1s;
 }
 
-nav > a:hover{
+nav#menu > a:hover{
     background-color: var(--cor2);
     color: white;
     transition-duration: 1s;

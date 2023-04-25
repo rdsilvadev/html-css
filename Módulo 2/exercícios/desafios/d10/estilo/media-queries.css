@@ -34,8 +34,8 @@
     }
 
     nav#menu {
-        text-align: center;
         display: none;
+        grid-template-columns: auto;
         gap: 2px;
     }
 
