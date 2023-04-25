@@ -25,8 +25,8 @@
         background-color: var(--cor2);
     }
 
-    nav {
-        padding: 5px;
+    nav#menu {
+        padding: 2px;
     }
 
     nav > a {
